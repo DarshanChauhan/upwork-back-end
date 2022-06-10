@@ -29,8 +29,16 @@ module.exports = (sequelize, DataTypes) => {
         type: Sequelize.ENUM("client", "employee"),
         defaultValue: null,
       },
-      createdAt: { type: Sequelize.DATE, defaultValue: Sequelize.NOW },
-      updatedAt: { type: Sequelize.DATE, defaultValue: Sequelize.NOW },
+      createdAt: {
+        type: "TIMESTAMP",
+        defaultValue: Sequelize.literal("CURRENT_TIMESTAMP"),
+        allowNull: false,
+      },
+      updatedAt: {
+        type: "TIMESTAMP",
+        defaultValue: Sequelize.literal("CURRENT_TIMESTAMP"),
+        allowNull: false,
+      },
     },
     { underscored: true }
   );
