@@ -37,6 +37,16 @@ db.skill = require("./skill")(sequelize, DataTypes);
 db.hireManager = require("./hireManager")(sequelize, DataTypes);
 db.jobs = require("./job")(sequelize, DataTypes);
 db.otherSkills = require("./otherSkills")(sequelize, DataTypes);
+db.attachment = require("./attachment")(sequelize, DataTypes);
+db.companyContract = require("./companyContract")(sequelize, DataTypes);
+db.contract = require("./contract")(sequelize, DataTypes);
+db.freelancerContract = require("./freelancerContract")(sequelize, DataTypes);
+db.message = require("./message")(sequelize, DataTypes);
+db.proposal = require("./proposal")(sequelize, DataTypes);
+db.proposalStatusCatalog = require("./proposalStatusCatalog")(
+  sequelize,
+  DataTypes
+);
 
 db.sequelize.sync({ alter: true }).then(() => {
   console.log("Drop and re-aync db");
