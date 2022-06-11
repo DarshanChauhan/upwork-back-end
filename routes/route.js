@@ -12,4 +12,6 @@ route.use("/complexities", require("./complexitiesRoute"));
 route.use("/expectedDuration", require("./expectedDurationRoutes"));
 route.use("/company-client", require("./companyClientRoutes"));
 route.use("/hire-manager", require("./hireManagerRoutes"));
+route.use("/freelancer", require("./freelancerRoutes"));
+route.use("/test-result", require("./testResultRoutes"));
 module.exports = route;
