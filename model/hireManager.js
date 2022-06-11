@@ -27,8 +27,8 @@ module.exports = (sequelize, DataTypes) => {
       companyId: {
         type: Sequelize.INTEGER,
         references: {
-          model: "companyClient",
-          key: "companyId",
+          model: "company_clients",
+          key: "company_id",
           allowNull: false,
         },
         onUpdate: "cascade",

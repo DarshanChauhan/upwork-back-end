@@ -34,9 +34,9 @@ db.expectedDuration = require("./expectedDuration")(sequelize, DataTypes);
 db.company = require("./company")(sequelize, DataTypes);
 db.paymentType = require("./paymentType")(sequelize, DataTypes);
 db.skill = require("./skill")(sequelize, DataTypes);
-// db.hireManager = require("./hireManager")(sequelize, DataTypes);
-// db.jobs = require("./job")(sequelize, DataTypes);
-// db.otherSkills = require("./otherSkills")(sequelize, DataTypes);
+db.hireManager = require("./hireManager")(sequelize, DataTypes);
+db.jobs = require("./job")(sequelize, DataTypes);
+db.otherSkills = require("./otherSkills")(sequelize, DataTypes);
 
 db.sequelize.sync({ alter: true }).then(() => {
   console.log("Drop and re-aync db");

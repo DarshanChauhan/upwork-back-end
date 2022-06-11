@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
       hireManagerId: {
         type: Sequelize.INTEGER,
         references: {
-          model: "hireManager",
+          model: "hire_managers",
           key: "id",
         },
         onUpdate: "cascade",
@@ -20,7 +20,7 @@ module.exports = (sequelize, DataTypes) => {
       expectedDurationId: {
         type: Sequelize.INTEGER,
         references: {
-          model: "expectedDuration",
+          model: "expected_durations",
           key: "id",
         },
         onUpdate: "cascade",
@@ -29,7 +29,7 @@ module.exports = (sequelize, DataTypes) => {
       complexityId: {
         type: Sequelize.INTEGER,
         references: {
-          model: "complexity",
+          model: "complexities",
           key: "id",
         },
         onUpdate: "cascade",
@@ -48,7 +48,7 @@ module.exports = (sequelize, DataTypes) => {
       paymentTypeId: {
         type: Sequelize.INTEGER,
         references: {
-          model: "paymentType",
+          model: "payment_types",
           key: "id",
         },
         onUpdate: "cascade",

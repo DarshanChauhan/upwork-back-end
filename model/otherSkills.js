@@ -12,7 +12,7 @@ module.exports = (sequelize, DataTypes) => {
       jobId: {
         type: Sequelize.INTEGER,
         references: {
-          model: "job",
+          model: "jobs",
           key: "id",
         },
         onUpdate: "cascade",
