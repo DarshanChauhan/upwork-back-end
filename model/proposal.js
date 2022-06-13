@@ -42,7 +42,7 @@ module.exports = (sequelize, DataTypes) => {
         onDelete: "cascade",
       },
       paymentAmount: { type: DataTypes.DECIMAL(8, 2) },
-      currentProposalStatus: {
+      currentProposalStatusId: {
         type: Sequelize.INTEGER,
         references: {
           model: "proposal_status_catalogs",
