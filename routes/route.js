@@ -20,4 +20,6 @@ route.use("/has-skill", require("./hasSkillRoutes"));
 route.use("/freelancerContract", require("./freelancerContractRoutes"));
 route.use("/proposal", require("./proposalRoutes"));
 route.use("/contract", require("./contractRoutes"));
+route.use("/message", require("./messageRoutes"));
+route.use("/other-skills", require("./otherSkillRoutes"));
 module.exports = route;
