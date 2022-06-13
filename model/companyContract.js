@@ -12,7 +12,7 @@ module.exports = (sequelize, DataTypes) => {
       companyName: {
         type: Sequelize.STRING,
       },
-      companyLocation: {
+      companyContractLocation: {
         type: Sequelize.STRING,
       },
 

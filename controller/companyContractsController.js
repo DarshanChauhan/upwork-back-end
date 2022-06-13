@@ -4,10 +4,10 @@ const CompanyContract = db.companyContract;
 const InsertcompanyContracts = async (req, res) => {
   let companyContract;
   try {
-    const { companyName, companylocation } = req.body;
+    const { companyName, companyContractLocation } = req.body;
     companyContract = await CompanyContract.create({
       companyName: companyName,
-      companylocation: companylocation,
+      companyContractLocation: companyContractLocation,
     });
     if (companyContract) {
       res.json({
