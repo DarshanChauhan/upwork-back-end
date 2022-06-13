@@ -58,6 +58,11 @@ module.exports = (sequelize, DataTypes) => {
       paymentAmount: {
         type: DataTypes.DECIMAL(8, 2),
       },
+      createdAt: {
+        type: "TIMESTAMP",
+        defaultValue: Sequelize.literal("CURRENT_TIMESTAMP"),
+        allowNull: false,
+      },
 
       updatedAt: {
         type: "TIMESTAMP",

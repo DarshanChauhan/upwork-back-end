@@ -14,4 +14,8 @@ route.use("/company-client", require("./companyClientRoutes"));
 route.use("/hire-manager", require("./hireManagerRoutes"));
 route.use("/freelancer", require("./freelancerRoutes"));
 route.use("/test-result", require("./testResultRoutes"));
+route.use("/jobs", require("./jobRoutes"));
+route.use("/certification", require("./certificationRoutes"));
+route.use("/has-skill", require("./hasSkillRoutes"));
+route.use("/freelancerContract", require("./freelancerContractRoutes"));
 module.exports = route;
